@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Web Developer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Skills Grid */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #334155;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dominic Frydryk</h1>
+        <h2>Software Engineering Student & Full-Stack Developer</h2>
+        <p style="max-width: 600px; margin: 0 auto 1.5rem; color: #cbd5e1;">
+            Building efficient backends, responsive frontends, and bridging the gap between hardware functionality and software architecture.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/justadom" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="mailto:your.frydrykdominic@gmail.com">Email Me</a>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-container">
+            <span class="skill-tag">JavaScript / Node.js</span>
+            <span class="skill-tag">React & React Native</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">C# / .NET</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Linux / Bash Scripting</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-title">Employee Management API</div>
+                <div class="tech-stack">Node.js | GraphQL | MongoDB | Express</div>
+                <p>Designed and developed a scalable backend system for managing employee records. Implemented GraphQL for highly efficient, tailored data queries and mutations, connected to a NoSQL database schema.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Financial Management System</div>
+                <div class="tech-stack">C# | Console Application</div>
+                <p>Engineered a menu-driven application to handle user input processing, data validation, and core financial calculations utilizing strict object-oriented programming principles.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Server Infrastructure Management</div>
+                <div class="tech-stack">Linux CLI | Hardware Config | Networking</div>
+                <p>Troubleshot OS-level virtualization hypervisors, administered remote multiplayer game servers, and diagnosed hardware stability faults (e.g., Kernel-Power issues) ensuring optimal uptime.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dominic Frydryk.</p>
+    </footer>
+
+</body>
+</html>
