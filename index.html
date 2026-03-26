@@ -3,184 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Web Developer</title>
+    <title> Portfolio | Dominic Frydryk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --text-color: #f8fafc;
-            --accent-color: #38bdf8;
-            --card-bg: #1e293b;
+        html {
+            scroll-behavior: smooth;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 4rem 2rem;
-            border-bottom: 1px solid #334155;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            color: var(--accent-color);
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-
-        section {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--accent-color);
-            display: inline-block;
-            padding-bottom: 0.5rem;
-        }
-
-        /* Skills Grid */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-tag {
-            background-color: var(--card-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #334155;
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid #334155;
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-title {
-            font-size: 1.25rem;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .tech-stack {
-            font-size: 0.85rem;
-            color: #94a3b8;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-
-        footer {
-            text-align: center;
+        /* Custom CSS to replace @apply for a self-executable file */
+        .section-card {
+            background-color: white;
             padding: 2rem;
-            border-top: 1px solid #334155;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #94a3b8;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+            border: 1px solid #f3f4f6;
+        }
+        .nav-link {
+            transition: color 0.2s;
+        }
+        .nav-link:hover {
+            color: #60a5fa;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-    <header>
-        <h1>Dominic Frydryk</h1>
-        <h2>Software Engineering Student & Full-Stack Developer</h2>
-        <p style="max-width: 600px; margin: 0 auto 1.5rem; color: #cbd5e1;">
-            Building efficient backends, responsive frontends, and bridging the gap between hardware functionality and software architecture.
-        </p>
-        <div class="social-links">
-            <a href="https://github.com/justadom" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a href="mailto:your.frydrykdominic@gmail.com">Email Me</a>
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight text-blue-400">PORTFOLIO 2026</h1>
+            <div class="space-x-6 hidden md:flex text-sm uppercase tracking-wider font-semibold">
+                <a href="#about" class="nav-link">Bio</a>
+                <a href="#credentials" class="nav-link">Credentials</a>
+                <a href="#work" class="nav-link">Work Samples</a>
+                <a href="#capstone" class="nav-link">Capstone</a>
+                <a href="#professional" class="nav-link">Professional</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="bg-slate-800 text-white py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-extrabold mb-2">Dominic Frydryk</h2>
+                <p class="text-xl text-blue-300 font-medium">Software Engineering Student | Full-Stack Developer</p>
+            </div>
+            
+            <div class="bg-slate-700 p-8 rounded-2xl border-l-8 border-blue-500 shadow-2xl">
+                <h3 class="text-2xl font-bold text-white mb-4 italic">Philosophy & Career Goals</h3>
+                <p class="mb-4 text-lg text-gray-200">
+                    “I have a motto on my bedroom wall: 'Obstacles are what you see when you take your eye off the goal.' Giving up is not my style. I just want to do something that's worthwhile.” — Chris Burke
+                </p>
+                <p class="text-gray-300">
+                    My goal is to use my background in full-stack development and systems administration to build tools that are truly worthwhile for the end-user. As Chris Burke said, 'Obstacles are what you see when you take your eye off the goal,' and I’m committed to pushing through technical challenges to create resilient, high-impact software.
+                </p>
+            </div>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="assets/resume.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold transition shadow-lg">Download Resume (PDF)</a>
+                <a href="assets/cover-letter.pdf" target="_blank" class="bg-transparent border-2 border-white hover:bg-white hover:text-slate-800 px-8 py-3 rounded-full font-bold transition">Cover Letter Template</a>
+            </div>
         </div>
     </header>
 
-    <section id="skills">
-        <h3 class="section-title">Technical Skills</h3>
-        <div class="skills-container">
-            <span class="skill-tag">JavaScript / Node.js</span>
-            <span class="skill-tag">React & React Native</span>
-            <span class="skill-tag">GraphQL</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">C# / .NET</span>
-            <span class="skill-tag">Git & GitHub</span>
-            <span class="skill-tag">Linux / Bash Scripting</span>
+    <main class="container mx-auto max-w-5xl py-12 px-4">
+        
+        <section id="credentials" class="section-card">
+            <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b-4 border-blue-500 inline-block">Academic Credentials</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-xl text-slate-700">Advanced Diploma in Software Engineering</h4>
+                    <p class="text-gray-600">George Brown College | 2024 - Present</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section-card">
+            <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b-4 border-blue-500 inline-block">Academic Work Samples</h2>
+            <div class="grid md:grid-cols-1 gap-6">
+                <div class="p-6 border rounded-xl bg-slate-50 border-slate-200">
+                    <h4 class="font-bold text-xl text-blue-700">1. Employee Management System (GraphQL/Node.js)</h4>
+                    <p class="mt-2 text-gray-700">A full-stack API managing organizational hierarchies. Developed using **Node.js, Apollo Server, and MongoDB**. Features custom error handling and JWT-based authentication.</p>
+                </div>
+                <div class="p-6 border rounded-xl bg-slate-50 border-slate-200">
+                    <h4 class="font-bold text-xl text-blue-700">2. Financial Tracker (C# Console App)</h4>
+                    <p class="mt-2 text-gray-700">An OOP-focused application designed to reflect core programming standards. Implements file persistence to track student expenses and budget reports.</p>
+                </div>
+                <div class="p-6 border rounded-xl bg-slate-50 border-slate-200">
+                    <h4 class="font-bold text-xl text-blue-700">3. Backend server for storing employees</h4>
+                    <p class="mt-2 text-gray-700">Developed a scalable backend API using <strong>Node.js, Express, and GraphQL</strong> to manage employee records. Integrated a <strong>MongoDB Atlas</strong> database to handle persistent storage and implemented custom resolvers for efficient data retrieval.</p>
+                </div>
+                <div class="p-6 border rounded-xl bg-slate-50 border-slate-200">
+                    <h4 class="font-bold text-xl text-blue-700">4. Fully Functional Microservice</h4>
+                    <p class="mt-2 text-gray-700">Designed and deployed a decoupled microservice architecture to handle specific business logic independently. Focused on <strong>scalability and RESTful communication</strong>, ensuring the service could be maintained and updated without impacting the core application.</p>                </div>
+                <div class="p-6 border rounded-xl bg-slate-50 border-slate-200">
+                    <h4 class="font-bold text-xl text-blue-700">5. Android Studio Hypervisor Integration</h4>
+                    <p class="mt-2 text-gray-700">Configured virtualized development environments, overcoming Windows Hyper-V driver conflicts to maintain high-performance Android emulation for app testing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="capstone" class="section-card bg-slate-900 text-white border-none shadow-2xl">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-blue-400 inline-block">Capstone Project: FITQUEST</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-blue-400 font-bold uppercase tracking-widest text-xs">Project Vision</h4>
+                        <p class="text-sm">To bridge the gap between fitness and gaming through a user-first platform.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-400 font-bold uppercase tracking-widest text-xs">Requirements & Plan</h4>
+                        <p class="text-sm">Includes full Requirements Analysis (Functional/Non-functional), a 12-week Project Plan, and System Design documentation.</p>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="assets/W26_T12_Project Plan_v2.0.pdf" class="text-xs bg-white text-slate-900 px-4 py-2 rounded font-bold hover:bg-blue-400">View Project Plan</a>                    </div>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <h4 class="text-blue-400 font-bold mb-2">Current Status Report</h4>
+                    <ul class="text-sm space-y-2 opacity-90">
+                        <li>✅ Sprint 6: Database Schema Finalized</li>
+                        <li>✅ UI Mockups Approved</li>
+                        <li>⏳ Current: API Integration (85% Complete)</li>
+                        <li>📅 Launch Target: April 2026</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section-card">
+            <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b-4 border-blue-500 inline-block">Professional Summary</h2>
+            <div class="space-y-6">
+                <p class="text-gray-600">I pride myself on being a fast learner who can bridge the gap between software logic and hardware performance. Im consistently maintaining clean, documented code and stable server environments.</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-blue-400 font-bold mb-4 italic">Portfolio Living Document | Last Updated: March 2026</p>
+            <div class="flex justify-center space-x-8 text-sm">
+                <a href="https://github.com/justadom" target="_blank" class="hover:text-blue-400 transition underline">Source Code (GitHub)</a>            </div>
+            <p class="mt-8 text-gray-500 text-xs">Developed for COMP3078: Portfolio Development Project</p>
         </div>
-    </section>
-
-    <section id="projects">
-        <h3 class="section-title">Featured Projects</h3>
-        <div class="projects-grid">
-            
-            <div class="project-card">
-                <div class="project-title">Employee Management API</div>
-                <div class="tech-stack">Node.js | GraphQL | MongoDB | Express</div>
-                <p>Designed and developed a scalable backend system for managing employee records. Implemented GraphQL for highly efficient, tailored data queries and mutations, connected to a NoSQL database schema.</p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">Financial Management System</div>
-                <div class="tech-stack">C# | Console Application</div>
-                <p>Engineered a menu-driven application to handle user input processing, data validation, and core financial calculations utilizing strict object-oriented programming principles.</p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">Server Infrastructure Management</div>
-                <div class="tech-stack">Linux CLI | Hardware Config | Networking</div>
-                <p>Troubleshot OS-level virtualization hypervisors, administered remote multiplayer game servers, and diagnosed hardware stability faults (e.g., Kernel-Power issues) ensuring optimal uptime.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Dominic Frydryk.</p>
     </footer>
 
 </body>
